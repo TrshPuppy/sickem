@@ -1,22 +1,16 @@
 package main
 
 import (
-	// Sickem mods
 	"fmt"
 
+	// Sickem mods
 	"github.com/trshpuppy/sickem/cmd"
 )
 
 func main() {
-	// Start the hung
+	// Start the hunt
 	placeholder := cmd.Sickem()
 
 	fmt.Println(placeholder)
-
-	// Take command line args
-
-	// start go routines?
-
-	// Each go routine creates a file (but lets start with CLI output)
-
+	return
 }

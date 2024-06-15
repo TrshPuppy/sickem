@@ -2,19 +2,18 @@ package utils
 
 import (
 	"flag"
-	"fmt"
 )
 
 type Flags struct {
-	nmap *bool
+	Nmap bool
 }
 
 func GetFlags() Flags {
 	nmapFLag := flag.Bool("nmap", false, "Ask sickem to run nmap")
 
-	fl := Flags{nmap: nmapFLag}
+	flag.Parse()
 
-	fmt.Printf("fl: %s\n", fl)
+	fl := Flags{Nmap: *nmapFLag}
 
 	return fl
 }
