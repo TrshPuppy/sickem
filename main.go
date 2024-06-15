@@ -4,7 +4,7 @@ import (
 	// Sickem mods
 	"fmt"
 
-	"github.com/trshpuppy/cmd"
+	"github.com/trshpuppy/sickem/cmd"
 )
 
 func main() {
